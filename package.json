@@ -1,0 +1,21 @@
+{
+  "name": "valkyrie-motorcycles",
+  "version": "1.0.0",
+  "description": "VALKYRIE MOTORCYCLES - Official Showcase & Catalog Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "motorcycle",
+    "supersport",
+    "showcase",
+    "portfolio",
+    "valkyrie"
+  ],
+  "author": "hands-boop",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.35.5"
+  }
+}
