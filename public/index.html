@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VALKYRIE MOTORCYCLES | Dirancang Untuk Juara</title>
+  <meta name="description" content="Katalog resmi VALKYRIE RS-1000 EVO. Mahakarya motorsport modern dengan performa buas, aerodinamika presisi, dan kemewahan sejati.">
+  
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-theme="sapphire">
+
+  <!-- ==================== WRAPPER ==================== -->
+  <div class="site-container">
+
+    <!-- ==============================================
+         HEADER / NAVBAR (CLEAN, FIXED/ELEGANT)
+         ============================================== -->
+    <header class="top-nav" id="topNav">
+      <div class="top-nav-inner">
+        <a href="#hero" class="brand-logo" aria-label="Beranda Valkyrie">
+          <svg class="brand-icon" viewBox="0 0 190 38" fill="currentColor">
+            <!-- Sleek Stylized Winged V Emblem -->
+            <path d="M4 6 L20 32 L36 6 L28 6 L20 20 L12 6 Z" fill="var(--color-primary)" />
+            <path d="M14 6 L20 16 L26 6 Z" fill="var(--color-accent)" />
+            <text x="44" y="25" font-family="'Outfit', sans-serif" font-weight="900" font-size="20" letter-spacing="4" fill="#0f172a">VALKYRIE</text>
+          </svg>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#hero" class="nav-item">BERANDA</a>
+          <a href="#showcase" class="nav-item">SPESIFIKASI</a>
+          <a href="#lineup" class="nav-item">WARNA & 360°</a>
+          <a href="#exploreModal" class="nav-item" id="btnOpenContact">KONTAK</a>
+        </nav>
+
+        <!-- Sound & Test Ride Action Buttons in Header -->
+        <div class="nav-actions">
+          <button class="nav-sound-btn" id="btnSoundRev" title="Dengarkan Raungan Mesin VALKYRIE RS-1000">
+            <i class="fa-solid fa-volume-high"></i>
+            <span>SUARA MESIN</span>
+          </button>
+          <button class="nav-cta-btn" id="btnHeaderTestRide">TEST RIDE</button>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- ==============================================
+         SECTION 1: HERO ("DIRANCANG UNTUK JUARA")
+         Simpel, Rapi, Elegan, dan Berkelas
+         ============================================== -->
+    <section class="section section-hero" id="hero">
+      <div class="hero-inner-grid">
+        
+        <!-- Left Side: Editorial Typography & Copy -->
+        <div class="hero-left-col">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>EDISI FLAGSHIP 2026 • HYPERSPORT</span>
+          </div>
+
+          <!-- Giant Bold Clean Typography -->
+          <div class="hero-headline-wrap">
+            <h1 class="hero-title">
+              <span class="hero-line">DIRANCANG</span>
+              <span class="hero-line">UNTUK</span>
+              <span class="hero-line hero-line-accent">JUARA</span>
+            </h1>
+          </div>
+
+          <p class="hero-desc">
+            Mahakarya motorsport modern bertenaga <strong>217.5 HP</strong>. Dirancang dengan presisi aerodinamika sirkuit, material sasis aluminium ultra-ringan, dan kontrol elektronik canggih untuk dominasi mutlak di setiap tikungan.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#showcase" class="btn-primary-hero">
+              <span>JELAJAHI MODEL</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <button class="btn-secondary-hero" id="btnHeroAudio">
+              <i class="fa-solid fa-bolt"></i>
+              <span>TES SUARA MESIN</span>
+            </button>
+          </div>
+
+          <!-- Quick Spec Highlights -->
+          <div class="hero-stats-row">
+            <div class="hero-stat">
+              <span class="stat-val">217.5<small>HP</small></span>
+              <span class="stat-label">Tenaga Mesin</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="hero-stat">
+              <span class="stat-val">2.8<small>dtk</small></span>
+              <span class="stat-label">0-100 KM/J</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="hero-stat">
+              <span class="stat-val">174<small>KG</small></span>
+              <span class="stat-label">Bobot Kering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Clean Dominant Motorcycle Hero Shot -->
+        <div class="hero-right-col">
+          <div class="hero-bike-stage">
+            <img src="assets/images/hero_bike.png" alt="VALKYRIE RS-1000 Front View" class="hero-dominant-img" id="heroBikeImg">
+            <div class="hero-bike-shadow"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         SECTION 2: SHOWCASE & SPESIFIKASI
+         ============================================== -->
+    <section class="section section-showcase" id="showcase">
+      <!-- Section Sub Header -->
+      <div class="section-sub-header">
+        <div class="sub-brand">
+          <span class="sub-brand-label">SHOWCASE DETAIL</span>
+          <h2 class="sub-brand-name">VALKYRIE RS-1000 EVO</h2>
+        </div>
+
+        <div class="sub-nav-links">
+          <button class="sub-nav-item" id="btnOpenAbout">TENTANG TEKNOLOGI</button>
+          <button class="sub-nav-item" id="btnOpenContact2">KONSULTASI HARGA</button>
+        </div>
+      </div>
+
+      <!-- Main Showcase Grid (3 Columns) -->
+      <div class="showcase-grid">
+        
+        <!-- Left Column: Model Title, Price, Description, Rating & Angle Selector -->
+        <div class="showcase-info-left">
+          <div class="model-badge-row">
+            <div class="model-title-wrap">
+              <span class="model-edition">SERIES 2026</span>
+              <h3 class="model-title">VALKYRIE<br><span class="model-title-sub">RS-1000 EVO</span></h3>
+            </div>
+            <div class="price-tag-floating">
+              <span class="price-label">Harga OTR Jakarta</span>
+              <span class="price-val">Rp 348 Juta</span>
+            </div>
+          </div>
+
+          <p class="model-description">
+            Edisi terbaru dari VALKYRIE RS-1000 EVO mengusung teknologi aerodinamika aerowinglet serat karbon murni dan suspensi elektronik adaptif. Rangka aluminium twin-spar yang sangat kokoh namun ringan memberikan manuver presisi serta kenyamanan handling pada kecepatan tinggi.
+          </p>
+
+          <!-- Rating -->
+          <div class="rating-box">
+            <span class="rating-number">4.9</span>
+            <div class="rating-stars" aria-label="Rating 5 bintang">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="rating-reviews">(1.240 Ulasan)</span>
+          </div>
+
+          <!-- Bottom Left Angle Thumbnails / Angle Selector -->
+          <div class="angle-carousel-wrapper">
+            <span class="carousel-arrow prev" id="anglePrev" title="Sudut Sebelumnya">«</span>
+            <div class="angle-thumbnails" id="angleThumbList">
+              <button class="angle-thumb-btn active" data-view="front" title="Tampak Depan 3/4">
+                <i class="fa-solid fa-motorcycle"></i>
+                <span>Depan</span>
+              </button>
+              <button class="angle-thumb-btn" data-view="side" title="Tampak Samping Penuh">
+                <i class="fa-solid fa-bicycle"></i>
+                <span>Samping</span>
+              </button>
+              <button class="angle-thumb-btn" data-view="cockpit" title="Tampak Kokpit & Tangki">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span>Kokpit</span>
+              </button>
+              <button class="angle-thumb-btn" data-view="engine" title="Detail Mesin & Rangka">
+                <i class="fa-solid fa-gears"></i>
+                <span>Mesin</span>
+              </button>
+              <button class="angle-thumb-btn" data-view="rear" title="Tampak Belakang & Knalpot">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <span>Knalpot</span>
+              </button>
+            </div>
+            <span class="carousel-arrow next" id="angleNext" title="Sudut Selanjutnya">»</span>
+          </div>
+        </div>
+
+        <!-- Center: Large 3/4 Showcase Motorcycle -->
+        <div class="showcase-center-bike">
+          <div class="bike-main-view-container">
+            <img src="assets/images/bike_showcase.png" alt="VALKYRIE RS-1000 EVO 3/4 View" id="mainShowcaseImg" class="showcase-img">
+            <div class="bike-floor-shadow"></div>
+          </div>
+
+          <!-- Explore Button Floating Below Bike -->
+          <button class="btn-explore" id="btnExplore" aria-label="Jelajahi Fitur Motor">
+            <span>JELAJAHI FITUR</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Right Column: Specs List -->
+        <div class="showcase-specs-right">
+          <div class="specs-header">
+            <h3>SPESIFIKASI TEKNIS</h3>
+            <div class="specs-accent-line"></div>
+          </div>
+
+          <dl class="specs-list">
+            <div class="spec-row">
+              <dt>Kapasitas Mesin</dt>
+              <dd>: 998 cc DOHC 4-Silinder Segaris</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Konsumsi BBM</dt>
+              <dd>: 18.5 km/liter</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Sistem Bahan Bakar</dt>
+              <dd>: Dual-Stage Electronic Fuel Injection</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Lampu Utama</dt>
+              <dd>: Adaptive Bi-LED Twin Projector</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Tipe Ban</dt>
+              <dd>: Tubeless Pirelli Diablo Supercorsa SP</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Tenaga Maksimal</dt>
+              <dd>: 217.5 HP @ 13.200 RPM</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Torsi Puncak</dt>
+              <dd>: 118 Nm @ 10.500 RPM</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Transmisi</dt>
+              <dd>: 6-Speed Bi-Directional Quickshifter</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Sistem Rem (ABS)</dt>
+              <dd>: Brembo Stylema Dual Cornering ABS</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Tipe Velg</dt>
+              <dd>: Forged Lightweight Aluminium Alloy</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Garansi Resmi</dt>
+              <dd>: 3 Tahun / 35.000 KM</dd>
+            </div>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         SECTION 3: 360 ROTATION, COLOR CUSTOMIZER & LINEUP
+         ============================================== -->
+    <section class="section section-customizer" id="lineup">
+      <!-- Section Mini Bar -->
+      <div class="customizer-top-bar">
+        <div class="customizer-heading-meta">
+          <span class="customizer-tag">STUDIO KUSTOMISASI</span>
+          <h2 class="customizer-title">PILIHAN WARNA & ROTASI 360°</h2>
+        </div>
+
+        <!-- 360 Degree Interactive Badge -->
+        <button class="badge-360" id="btn360Toggle" title="Klik untuk rotasi interaktif 360 derajat">
+          <span class="icon-360">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </span>
+          <span class="label-360">360° INTERAKTIF</span>
+        </button>
+      </div>
+
+      <!-- Main Customizer & Lineup Layout -->
+      <div class="customizer-main-grid">
+        
+        <!-- Left & Center: Full Side Motorcycle & Color Selector -->
+        <div class="customizer-stage">
+          <div class="bike-stage-viewport" id="bikeStageViewport">
+            <!-- Hint overlay for dragging -->
+            <div class="drag-hint" id="dragHint">
+              <i class="fa-solid fa-arrows-left-right"></i>
+              <span>Geser kursor atau pilih warna di bawah</span>
+            </div>
+
+            <img src="assets/images/bike_side.png" alt="Valkyrie Side Profile" id="customizerBikeImg" class="stage-bike-img">
+            <div class="bike-floor-shadow-large"></div>
+          </div>
+
+          <!-- Interactive Color Swatch Ring Picker -->
+          <div class="color-picker-wrapper">
+            <div class="color-ring-container">
+              <div class="color-ring-outer">
+                <div class="color-ring-inner">
+                  <i class="fa-solid fa-droplet color-icon-drop"></i>
+                </div>
+              </div>
+              <div class="color-picker-meta">
+                <span class="color-title">WARNA PILIHAN</span>
+                <span class="color-selected-name" id="selectedColorName">Sapphire Apex (Biru Elektrik)</span>
+              </div>
+            </div>
+
+            <!-- Swatch Buttons (Solid Colors, No Gradient) -->
+            <div class="swatch-list">
+              <button class="swatch-btn active" data-color="sapphire" title="Sapphire Apex (Biru Elektrik)" style="--swatch-color: #0052ff;"></button>
+              <button class="swatch-btn" data-color="emerald" title="Emerald Phantom (Hijau Zamrud)" style="--swatch-color: #047857;"></button>
+              <button class="swatch-btn" data-color="crimson" title="Rosso Corsa (Merah Kirmizi)" style="--swatch-color: #dc2626;"></button>
+              <button class="swatch-btn" data-color="stealth" title="Stealth Obsidian (Hitam Pekat Titanium)" style="--swatch-color: #0f172a;"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Other Models in Lineup & Social Links -->
+        <div class="lineup-sidebar-right">
+          <span class="lineup-header-label">LINI PRODUK LAINNYA</span>
+          
+          <div class="lineup-items-list">
+            <!-- Model 1 -->
+            <div class="lineup-card" data-model="naked" title="Pilih Model VALKYRIE 400 Naked">
+              <div class="lineup-img-wrap">
+                <img src="assets/images/bike_showcase.png" alt="VALKYRIE 400 Naked" class="lineup-img mod-naked">
+              </div>
+              <h4 class="lineup-model-title">VALKYRIE 400 NAKED</h4>
+              <span class="lineup-model-price">Rp 185 Juta</span>
+            </div>
+
+            <!-- Model 2 (Active/Current) -->
+            <div class="lineup-card active" data-model="supersport" title="Model Saat Ini: VALKYRIE RS-1000">
+              <div class="lineup-img-wrap">
+                <img src="assets/images/bike_side.png" alt="VALKYRIE RS-1000" class="lineup-img mod-supersport">
+              </div>
+              <h4 class="lineup-model-title">VALKYRIE RS-1000 EVO</h4>
+              <span class="lineup-model-price">Rp 348 Juta</span>
+            </div>
+
+            <!-- Model 3 -->
+            <div class="lineup-card" data-model="motard" title="Pilih Model VALKYRIE 690 Motard">
+              <div class="lineup-img-wrap">
+                <img src="assets/images/hero_bike.png" alt="VALKYRIE 690 Motard" class="lineup-img mod-motard">
+              </div>
+              <h4 class="lineup-model-title">VALKYRIE 690 MOTARD</h4>
+              <span class="lineup-model-price">Rp 245 Juta</span>
+            </div>
+          </div>
+
+          <!-- Vertical Pagination Dots -->
+          <div class="lineup-pagination-dots" aria-label="Navigasi Halaman Model">
+            <span class="dot" data-index="0"></span>
+            <span class="dot active" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+
+          <!-- Bottom Right Social Icons (Matches reference) -->
+          <footer class="footer-social-corner">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </footer>
+
+        </div>
+
+      </div>
+    </section>
+
+  </div> <!-- End site-container -->
+
+
+  <!-- ==============================================
+       MODALS & FORM POPUP
+       ============================================== -->
+  <div class="modal-overlay" id="exploreModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="btnModalClose">&times;</button>
+      
+      <div class="modal-header">
+        <span class="modal-tag">KONSULTASI & JADWAL TEST RIDE RESMI</span>
+        <h2 class="modal-title">Rasakan Sensasi VALKYRIE RS-1000 EVO</h2>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-feature-grid">
+          <div class="modal-feat-item">
+            <i class="fa-solid fa-bolt"></i>
+            <div>
+              <strong>Akselerasi 0-100 km/j: 2.8 Detik</strong>
+              <p>Didukung launch control cerdas 3 tingkatan.</p>
+            </div>
+          </div>
+          <div class="modal-feat-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <strong>Brembo Stylema Calipers</strong>
+              <p>Pengereman presisi tertinggi berstandar MotoGP.</p>
+            </div>
+          </div>
+          <div class="modal-feat-item">
+            <i class="fa-solid fa-wind"></i>
+            <div>
+              <strong>Active Carbon Winglets</strong>
+              <p>Menghasilkan 18.5 kg downforce di kecepatan 200 km/j.</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="test-ride-form" id="testRideForm">
+          <div class="form-group">
+            <label for="userName">Nama Lengkap</label>
+            <input type="text" id="userName" required placeholder="Contoh: Raden Satria">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="userPhone">Nomor WhatsApp</label>
+              <input type="tel" id="userPhone" required placeholder="0812-xxxx-xxxx">
+            </div>
+            <div class="form-group">
+              <label for="userCity">Kota Domisili</label>
+              <input type="text" id="userCity" required placeholder="Jakarta / Surabaya / Bandung">
+            </div>
+          </div>
+          <button type="submit" class="btn-submit-test-ride">
+            <span>KIRIM PERMINTAAN TEST RIDE</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">Pesan terkirim!</span>
+  </div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

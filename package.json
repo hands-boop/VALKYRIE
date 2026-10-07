@@ -4,7 +4,8 @@
   "description": "VALKYRIE MOTORCYCLES - Official Showcase & Catalog Website",
   "scripts": {
     "build": "echo 'Build successful'",
-    "dev": "node scripts/server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "keywords": [
     "motorcycle",
