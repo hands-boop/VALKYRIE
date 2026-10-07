@@ -1,5 +1,9 @@
 {
   "cleanUrls": true,
+  "rewrites": [
+    { "source": "/assets/(.*)", "destination": "/public/assets/$1" },
+    { "source": "/", "destination": "/public/index.html" }
+  ],
   "functions": {
     "server.js": {
       "includeFiles": "public/**"
