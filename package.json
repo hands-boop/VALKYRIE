@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "VALKYRIE MOTORCYCLES - Official Showcase & Catalog Website",
   "scripts": {
-    "build": "echo 'Build successful'",
-    "start": "node server.js"
+    "dev": "node scripts/server.js"
   },
   "keywords": [
     "motorcycle",
@@ -14,8 +13,5 @@
     "valkyrie"
   ],
   "author": "hands-boop",
-  "license": "ISC",
-  "devDependencies": {
-    "sharp": "^0.35.5"
-  }
+  "license": "ISC"
 }

@@ -2,7 +2,9 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+const ROOT_DIR = path.resolve(__dirname, '..');
+
 const MIME_TYPES = {
   '.html': 'text/html; charset=UTF-8',
   '.css': 'text/css; charset=UTF-8',
@@ -22,7 +24,7 @@ const server = http.createServer((req, res) => {
   let reqPath = decodeURI(req.url.split('?')[0]);
   if (reqPath === '/') reqPath = '/index.html';
   
-  const filePath = path.join(__dirname, reqPath);
+  const filePath = path.join(ROOT_DIR, reqPath);
   const ext = path.extname(filePath).toLowerCase();
   
   fs.readFile(filePath, (err, data) => {
