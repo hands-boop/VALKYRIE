@@ -2,8 +2,8 @@
   "name": "valkyrie-motorcycles",
   "version": "1.0.0",
   "description": "VALKYRIE MOTORCYCLES - Official Showcase & Catalog Website",
-  "main": "server.js",
   "scripts": {
+    "build": "echo 'Build successful'",
     "start": "node server.js"
   },
   "keywords": [
@@ -15,7 +15,7 @@
   ],
   "author": "hands-boop",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "sharp": "^0.35.5"
   }
 }
